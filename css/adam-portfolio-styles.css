@@ -1,0 +1,200 @@
+/* porfolio page styles */
+
+/* basic/common page styles */
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: calc(20px + 0.4vw);
+  /* font size calculations: aim is to start at a decent size and expand with the size of the viewport */
+  color: #2d3c49;
+  /* text colour #2d3c49 is a dark grey-blue */
+  background-color: white;
+  width: 100%;
+}
+
+p {
+  font-size: calc(16px + 0.1vw);
+  overflow-wrap: break-word;
+  /* wrap to handle long URLs */
+  margin: 5px;
+}
+
+h3 {
+  margin: 8px;
+}
+
+.page-break {
+  height: 0.75vh;
+  background-color: #7d97ad;
+  /* background colour #7d97ad is a light grey-blue */
+}
+
+/* portfolio headings and intro */
+.intro {
+  width: 100%;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.logo {
+  width: 65%;
+  height: 65%;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 15px;
+}
+
+.main-title {
+  width: 100%;
+  margin: 0;
+  padding-left: 10px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.tagline {
+  width: 100%;
+  margin: 0;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+/* primary portfolio content */
+.hero {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.section-heading {
+  width: 100%;
+  color: #7d97ad;
+  margin: 20px 0 5px;
+  /* margin: top, left/right, bottom */
+}
+
+.projects, .sketches {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-container {
+  width: 90%;
+  height: 500px;
+}
+
+/* height is 50% to allow custom space for caption/links */
+.project-container-img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.sketch-container {
+  width: 90%;
+  min-width: 200px;
+  height: 320px;
+  margin: 10px auto;
+}
+
+.wide {
+  /* better size for wider aspect ratio images */
+  min-width: 320px;
+  height: 240px;
+}
+
+/* height is 90% to allow custom space for caption/links */
+.sketch-image {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.valid-css {
+  border:0;
+  width:88px;
+  height:31px;
+}
+
+/* responsive behaviour media queries*/
+@media screen and (min-device-width: 480px) {
+  .project-container {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .sketch-container {
+    width: 40%;
+    height: 360px;
+    margin: 10px 5px;
+  }
+
+  .wide {
+    width: 50%;
+    height: 300px;
+  }
+}
+
+/*
+for ipad level screen - around 768x1024
+showing two images on each row
+ */
+@media screen and (min-device-width: 720px) {
+  .project-container {
+    width: 30%;
+    margin: 10px 2%;
+  }
+
+  .sketch-container {
+    height: 480px;
+  }
+
+  .wide {
+    height: 360px;
+  }
+}
+
+/*
+for desktop screen - 1280x720 and beyond
+ */
+@media screen and (min-device-width: 1280px) {
+  .sketch-container {
+    height: 640px;
+  }
+
+  .wide {
+    height: 480px;
+  }
+}
+
+/*
+for desktop screen - 1600x900 and beyond
+aim to show three sketch images on each row
+*/
+@media screen and (min-device-width: 1600px) {
+  body {
+    width: 1600px;
+    transition: width 0.5s;
+    margin: 0 auto;
+  }
+
+  .sketch-container {
+    width: 32%;
+    height: 720px;
+  }
+
+  .wide {
+    width: 60%;
+    height: 540px;
+  }
+
+  .sketch-image {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
