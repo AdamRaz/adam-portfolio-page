@@ -24,8 +24,9 @@ h3 {
 
 .page-break {
   height: 0.75vh;
-  background-color: #7d97ad;
-  /* background colour #7d97ad is a light grey-blue */
+  background-color: #b8c7d4;
+  border: none;
+  /* background colour # is a light grey-blue */
 }
 
 /* portfolio headings and intro */
@@ -103,6 +104,7 @@ h3 {
 
 .wide {
   /* better size for wider aspect ratio images */
+  /* applied later in css code to override previous settings for images that have wide class */
   min-width: 320px;
   height: 240px;
 }
