@@ -83,4 +83,5 @@ app screens:
 ![image of neighbourhood app screen](./readme-img-2.PNG "neighbourhood app screen")
 
 * desktop view
+
 see the live link: https://adamraz.github.io/adam-portfolio-page/
