@@ -69,3 +69,18 @@ To apply different styles for different device screens
 ## acknowledgments
 
 * Udacity course and people! see https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001
+
+## project preview:
+
+app screens:
+
+* mobile view
+
+![image of neighbourhood app screen](./readme-img-1.PNG "neighbourhood app screen")
+
+* ipad view
+
+![image of neighbourhood app screen](./readme-img-2.PNG "neighbourhood app screen")
+
+* desktop view
+see the live link: https://adamraz.github.io/adam-portfolio-page/
