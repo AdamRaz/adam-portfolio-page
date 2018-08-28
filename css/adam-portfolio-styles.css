@@ -12,6 +12,7 @@ body {
 }
 
 p {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: calc(16px + 0.1vw);
   overflow-wrap: break-word;
   /* wrap to handle long URLs */
