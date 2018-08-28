@@ -99,14 +99,14 @@ h3 {
   object-fit: cover;
 }
 
-.sketch-container {
+.sketch-container, .model-container {
   width: 90%;
   min-width: 200px;
   height: 320px;
   margin: 10px auto;
 }
 
-.wide {
+.wide, .wide-model {
   /* better size for wider aspect ratio images */
   /* applied later in css code to override previous settings for images that have wide class */
   min-width: 320px;
@@ -114,28 +114,7 @@ h3 {
 }
 
 /* height is 90% to allow custom space for caption/links */
-.sketch-image {
-  width: 100%;
-  height: 90%;
-  object-fit: contain;
-}
-
-.model-container {
-  width: 90%;
-  min-width: 200px;
-  height: 320px;
-  margin: 10px auto;
-}
-
-.wide-model {
-  /* better size for wider aspect ratio images */
-  /* applied later in css code to override previous settings for images that have wide class */
-  min-width: 320px;
-  height: 240px;
-}
-
-/* height is 90% to allow custom space for caption/links */
-.model-image {
+.sketch-image, .model-image {
   width: 100%;
   height: 90%;
   object-fit: contain;
@@ -183,6 +162,11 @@ showing two images on each row
   .wide {
     height: 360px;
   }
+
+  .model-container {
+    width: 40%;
+    height: 300px;
+  }
 }
 
 /*
@@ -195,6 +179,12 @@ for desktop screen - 1280x720 and beyond
 
   .wide {
     height: 480px;
+  }
+
+  .sketch-image {
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
   }
 }
 
@@ -219,9 +209,5 @@ aim to show three sketch images on each row
     height: 540px;
   }
 
-  .sketch-image {
-    width: 90%;
-    height: 80%;
-    object-fit: cover;
-  }
+
 }
