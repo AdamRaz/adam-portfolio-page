@@ -193,12 +193,7 @@ for desktop screen - 1600x900 and beyond
 aim to show three sketch images on each row
 */
 @media screen and (min-device-width: 1600px) {
-  body {
-    width: 1600px;
-    transition: width 0.5s;
-    margin: 0 auto;
-  }
-
+ 
   .sketch-container {
     width: 32%;
     height: 720px;
@@ -210,4 +205,16 @@ aim to show three sketch images on each row
   }
 
 
+}
+
+@media screen and (min-device-width: 1900px) {
+  body {
+    width: 1700px;
+    transition: width 0.5s;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 70%;
+  }
 }
