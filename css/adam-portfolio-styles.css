@@ -120,6 +120,27 @@ h3 {
   object-fit: contain;
 }
 
+.model-container {
+  width: 90%;
+  min-width: 200px;
+  height: 320px;
+  margin: 10px auto;
+}
+
+.wide-model {
+  /* better size for wider aspect ratio images */
+  /* applied later in css code to override previous settings for images that have wide class */
+  min-width: 320px;
+  height: 240px;
+}
+
+/* height is 90% to allow custom space for caption/links */
+.model-image {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
 .valid-css {
   border:0;
   width:88px;
